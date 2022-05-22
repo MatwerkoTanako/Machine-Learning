@@ -1,7 +1,18 @@
-package introduction
+package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
-func Hello() {
-	fmt.Println("Hello")
+func Hello(name string) error {
+	x := "hello world, "
+	x += name
+	fmt.Println(x)
+	return errors.New("you suck at coding")
+}
+
+func main() {
+	name := "Masaki"
+	Hello(name)
 }
