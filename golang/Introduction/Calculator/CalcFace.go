@@ -1,1 +1,5 @@
 package Calculator
+
+func init() {
+
+}
